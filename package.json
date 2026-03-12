@@ -1,0 +1,14 @@
+{
+  "name": "estudiante-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "mongodb": "^6.3.0"
+  }
+}
