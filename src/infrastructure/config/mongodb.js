@@ -8,7 +8,7 @@ export async function connectDB() {
   if (!client) {
     client = new MongoClient(MONGO_URL);
     await client.connect();
-    console.log("✅ Conectado a MongoDB");
+    console.log(" Conectado a MongoDB");
   }
   return client;
 }

@@ -50,6 +50,21 @@ curl -X POST http://localhost:3000/api/estudiantes -H "Content-Type: application
 
 Invoke-RestMethod -Method POST http://localhost:3000/api/estudiantes -Headers @{"Content-Type"="application/json"} -Body '{"codigo":"EST-001","nombre":"Juan Perez"}'
 
+# crear profesor
+
+Invoke-RestMethod -Method POST `
+  -Uri "http://localhost:3000/api/profesores" `
+  -ContentType "application/json" `
+  -Body '{"cedula":"123456","nombre":"Juan Pérez"}'
+
 # Listar todos los estudiantes
 curl http://localhost:3000/api/estudiantes
+
+#Listar todos los profesores
+
+Invoke-RestMethod -Method POST `
+  -Uri "http://localhost:3000/api/profesores" `
+  -ContentType "application/json" `
+  -Body '{"cedula":"123456","nombre":"Juan Pérez"}'
 ```
+
